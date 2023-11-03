@@ -52,7 +52,7 @@ class PianoRollDisplay {
         const restOfPianoRollsDiv = document.createElement('div');
 
         // Make main Piano Roll block bigger
-        pianoRollContainer.setAttribute('style', 'grid-template-columns: 60% 40%');
+        pianoRollContainer.setAttribute('style', 'grid-template-columns: 60% 40%; overflow: hidden;');
 
         // Add classes to divs of main and rest Piano Rolls blocks
         mainPianoRollDiv.classList.add('main-div');
@@ -165,7 +165,7 @@ class PianoRollDisplay {
             const noteX1 = note.getAttribute('x');
             if (noteX1 >= selectedAreaX1 && noteX1 <= selectedAreaX2) numberOfNotes++;
           });
-          alert('number of notes: ' + numberOfNotes);
+          alert('Number of notes: ' + numberOfNotes);
         });
 
         pianoRollContainer.appendChild(mainPianoRollDiv);
