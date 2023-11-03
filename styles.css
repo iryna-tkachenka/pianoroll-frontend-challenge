@@ -85,3 +85,11 @@ button:hover {
 .description {
   margin-top: 10px;
 }
+
+.main-div svg {
+  position: relative;
+}
+
+.selected-area {
+  fill: rgba(73, 210, 199, 0.705);
+}
